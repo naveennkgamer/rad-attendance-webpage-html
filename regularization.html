@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>REGULARIZATION_PAGE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+  <div class="hometotal_cont">
+
+    <div class="navbar_cont" style=" height: 780px;">
+      <img class="menuicon" src="images/menu-01.png" alt="menu">
+      <img class="cancelicon" src="images/Icon.png" alt="cancel">
+      <div class="navbar">
+        <ul>
+            <li><a  href="homepage.html#"  ><img class="home" src="images/home-05.png" alt="home"> <span class="span">HOME</span> </a></li>
+            <li><a  href="leavests1.html"><img class="home" src="images/Icon2.png" alt="home"><span class="span">LEAVE STATUS</span></a></li>
+            <li><a href="requestpage.html" ><img class="home" src="images/file-05.png" alt="home"><span class="span">REQUEST</span></a></li>
+            <li><a href="teaminfo.html"><img class="home" src="images/Group 57.png" alt="home"><span class="span">TEAM INFO</span></a></li>
+            <li><a href="regularization.html" id="active" ><img class="home" src="images/Vector 23.png" alt="home"><span class="span">REGULARIZATION</span></a></li>
+            <li><a href="ANNOUNCEMENT.html"><img class="home" src="images/signal.png" alt="home"><span class="span">ANNOUNCEMENT</span></a></li>
+          </ul>
+      </div>
+
+    </div>
+    <div class="header">
+        <div class="container">
+          <div class="logohead">
+            <img class="logo" src="images/logo.png" alt="logo">
+          </div>
+        </div>
+    </div>
+    <div class="body_cover">
+      <div class="container">
+        <div class="regularpagewhitebox" >
+            <p class="monthtit" style="color: #392C5A; font-size: 24px; float: left; text-align: center; width: 100%;">ATTENDANCE REGULARIZATION</p>
+            <hr style="color: #C4C4C4; width: 500px; height: 1px;">
+
+            <div class="regularform_container">
+              
+                <div class="regularform_group">
+                  <label for="leaveType">DATE</label>
+                  <input type="date" id="fromDate" value="YYYY-MM-DD">
+                </div>
+          
+                <div class="regularform_group">
+                  <label for="leaveMode">FORGET TO</label>
+                  <select id="leaveMode">
+                    <option>CHECK IN</option>
+                    <option>CHECK OUT</option>
+                    
+                  </select>
+                </div>
+                
+                <div class="regularform_group" id="lefttime">
+                    <label for="fromDate">FORM TIME</label>
+                    <input type="time" id="appt" name="appt">
+                  </div>
+                  <div class="regularform_group">
+                    <label for="toDate">TO TIME</label>
+                    <input type="time" id="appt" name="appt">
+                  </div>
+                  <div class="textregular">
+                    <span class="loginhoursreg">TOTAL LOGIN HOURS : 02:26</span> 
+                    <span class="loginhoursregright">STATUS : ABSENT</span>
+                  </div>
+                  
+          
+                <div class="regularform_group_des">
+                  <label for="description">REASON</label>
+                  <textarea class="no-resize" id="description" rows="4"></textarea>
+                </div>
+          
+               
+                <div class="regularform_groupsubmit">
+                <a href="regularization.html"><button type="submit" class="regularsubmit-btn" >SUBMIT</button></a>
+                </div>
+            </div>
+            
+            
+
+            </div>
+        
+
+
+      </div>
+    </div>
+</div>
+
+    <script>
+        const menuIcon = document.querySelector(".menuicon");
+        const cancelIcon = document.querySelector(".cancelicon");
+        const navbarCont = document.querySelector(".navbar_cont");
+        menuIcon.addEventListener("click", () => {
+          navbarCont.classList.add("expanded");
+          menuIcon.style.display = "none";
+          cancelIcon.style.display = "block";
+        });
+      
+        cancelIcon.addEventListener("click", () => {
+          navbarCont.classList.remove("expanded");
+          cancelIcon.style.display = "none";
+          menuIcon.style.display = "block";
+        });
+      </script>
+
+
+
+</body>
+
+</html>

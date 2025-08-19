@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>LEAVE_STATUS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+  <div class="hometotal_cont">
+
+    <div class="navbar_cont">
+      <img class="menuicon" src="images/menu-01.png" alt="menu">
+      <img class="cancelicon" src="images/Icon.png" alt="cancel">
+      <div class="navbar">
+        <ul>
+            <li><a  href="homepage.html"  ><img class="home" src="images/home-05.png" alt="home"> <span class="span">HOME</span> </a></li>
+            <li><a  href="leavests1.html" id="active"><img class="home" src="images/Icon2.png" alt="home"><span class="span">LEAVE STATUS</span></a></li>
+            <li><a href="requestpage.html"><img class="home" src="images/file-05.png" alt="home"><span class="span">REQUEST</span></a></li>
+            <li><a href="teaminfo.html" ><img class="home" src="images/Group 57.png" alt="home"><span class="span">TEAM INFO</span></a></li>
+            <li><a href="regularization.html" ><img class="home" src="images/Vector 23.png" alt="home"><span class="span">REGULARIZATION</span></a></li>
+            <li><a href="ANNOUNCEMENT.html"><img class="home" src="images/signal.png" alt="home"><span class="span">ANNOUNCEMENT</span></a></li>
+          </ul>
+      </div>
+
+    </div>
+    <div class="header">
+        <div class="container">
+          <div class="logohead">
+            <img class="logo" src="images/logo.png" alt="logo">
+          </div>
+        </div>
+    </div>
+    <div class="body_cover">
+      <div class="container">
+        <div class="leavepagewhitebox" >
+            <p class="monthtit" style="color: #392C5A; font-size: 24px; float: left; text-align: center; width: 100%;"> LEAVE STATUS</p>
+            <hr style="color: #C4C4C4; width: 800px; height: 1px;">
+            <div class="levstscontainer">
+            
+        
+          <div class="leavetit">
+            <button id="personalBtn" class="persbut" onclick="showTab('personal')">
+                <div class="personalimgbox">
+                    <div class="usrimgper">
+                        <img id="personalImg" src="images/Group red1.png" alt="user" style="width: 24px; height: 24px; float: left;">
+                        <span class="personaltxt" style="color: #EE4037;">PERSONAL</span>                    </div>
+                </div>
+            </button>
+            <button id="teamBtn" class="persbut1" onclick="showTab('team')">
+                <div class="personalimgbox1">
+                    <div class="usrimgper">
+                        <img id="teamImg" src="images/Group 48.png" alt="user" style="width: 26px; height: 24px; float: left;">
+                        <span class="teamtxt1" style="color: #818181;">TEAM</span>
+                      </div>
+                </div>
+            </button>
+        </div>
+        
+        
+          
+          <!-- Content Sections -->
+          <div id="personal" class="tabcontent">
+             
+            <div class="leavedetails" id="PENDING">
+              <p class="fullday" >FULL DAY</p>
+              <p class="daysno" >3 DAY</p>
+              <p class="CasualLeave">CASUAL LEAVE</p>
+              <P class="datetxt">THU, 03 APRIL</P>
+              <p class="approved " >APPROVED</p>
+          </div>
+          <div class="leavedetails" id="PENDING">
+              <p class="fullday" >FULL DAY</p>
+              <p class="daysno" >1 DAY</p>
+              <p class="CasualLeave">CASUAL LEAVE</p>
+              <P class="datetxt">THU, 03 APRIL</P>
+              <p class="PENDING" id="PENDING" >PENDING</p>
+          </div>
+          <div class="leavedetails" id="PENDING">
+              <p class="fullday" >FULL DAY</p>
+              <p class="daysno" >2 DAY</p>
+              <p class="CasualLeave">CASUAL LEAVE</p>
+              <P class="datetxt">THU, 03 APRIL</P>
+              <p class="REJECTED" >REJECTED</p>
+          </div>
+          <div class="leavedetails" id="PENDING">
+              <p class="fullday" >FULL DAY</p>
+              <p class="daysno" >15 DAY</p>
+              <p class="CasualLeave">CASUAL LEAVE</p>
+              <P class="datetxt">THU, 03 APRIL</P>
+              <p class="PENDING" id="PENDING" >PENDING</p>
+          </div>
+          <div class="leavedetails" id="PENDING">
+              <p class="fullday" >FULL DAY</p>
+              <p class="daysno" >6 DAY</p>
+              <p class="CasualLeave">CASUAL LEAVE</p>
+              <P class="datetxt">THU, 03 APRIL</P>
+              <p class="PENDING" id="PENDING">PENDING</p>
+          </div>
+             
+          </div>
+          
+          <div id="team" class="tabcontent" style="display:none;">
+              
+              <div class="teamtabcnt" id="PENDING">
+                  <div class="teamusrpic">
+                    <img src="images/Ellipse 210.png" alt="user img" style="width: 110px; height: 110px;">
+                  </div>
+                  <div class="teamusr_id">
+                    <span class="teamtab_name">PARASURAM</span>
+                   <span class="teamtab_id" >RAD9677</span> 
+                  </div>
+                  <div class="teamlv_dts">
+                    <p class="teamfullday" >FULL DAY</p>
+              <p class="teamdaysno" >6 DAY</p>
+              <p class="teamCasualLeave">CASUAL LEAVE</p>
+              <span class="teamdatetxt">THU, 03 APRIL</span>
+              <span class="teamapproved" style="color: #2ED275;">APPROVED</span>
+                  </div>
+              </div>
+              <div class="teamtabcnt" id="PENDING">
+                <div class="teamusrpic">
+                  <img src="images/Ellipse 210.png" alt="user img" style="width: 110px; height: 110px;">
+                </div>
+                <div class="teamusr_id">
+                  <span class="teamtab_name">PARASURAM</span>
+                 <span class="teamtab_id" >RAD9677</span> 
+                </div>
+                <div class="teamlv_dts">
+                  <p class="teamfullday" >FULL DAY</p>
+            <p class="teamdaysno" >20 DAY</p>
+            <p class="teamCasualLeave">CASUAL LEAVE</p>
+            <span class="teamdatetxt">WED, 09 APRIL</span>
+            <span class="teampending" id="PENDING" >PENDING</span>
+                </div>
+            </div>
+             
+          </div>
+          
+        </div>
+           
+            </div>
+        
+      </div>
+    </div>
+</div>
+
+<!-- Popup Modal -->
+<div id="popupModal" class="popup-modal">
+  <div class="popup-contentleave">
+    <span class="close-btn">&times;</span>
+    <div class="popup-inner">
+      <img class="popup_userpic" src="Ellipse 210.png" alt="User Image">
+      <h2 class="popup_username">PARASURAM</h2>
+      <p class="popup_userid"> RAD9677</p>
+      <DIV class="tablepopup">
+        <table class="leave-table">
+          <tr>
+            <td>Leave Type</td>
+            <td><strong>CASUAL LEAVE</strong></td>
+          </tr>
+          <tr>
+            <td>Leave Mode</td>
+            <td><strong>FULL DAY</strong></td>
+          </tr>
+          <tr>
+            <td>Leave From</td>
+            <td><strong>WED, 09 APRIL</strong></td>
+          </tr>
+          <tr>
+            <td>Leave To</td>
+            <td><strong>TUE, 15 APRIL</strong></td>
+          </tr>
+          <tr>
+            <td>No Of Days</td>
+            <td><strong>5 DAYS</strong></td>
+          </tr>
+        </table>
+      </DIV>
+     
+       <p class="descrbtit"> DESCRIPTION</p>
+       <p class="descrbcontent"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer. </p>
+
+        <div class="action-section">
+          <div class="icons">
+            <button class="icon-btn">
+              <img src="images/image-down.png" alt="Icon" class="icon-img">
+            </button>
+            <button class="icon-btn">
+              <img src="images/image-down.png" alt="Icon" class="icon-img">
+            </button>
+          </div>
+        
+          <div class="radio-buttons">
+            <label>
+              <input type="radio" name="status" value="approved">
+              Approved
+            </label>
+            <label>
+              <input type="radio" name="status" value="rejected">
+              Rejected
+            </label>
+          </div>
+        
+        </div>
+        <div class="subbutpopup">
+          <a href="leavests1.html" style="text-decoration: none; color: white;"><p class="reqleavbut" >SUBMIT</p></a>
+        </div>
+        
+      
+
+
+    </div>
+  </div>
+</div>
+
+
+    <script>
+        const menuIcon = document.querySelector(".menuicon");
+        const cancelIcon = document.querySelector(".cancelicon");
+        const navbarCont = document.querySelector(".navbar_cont");
+        menuIcon.addEventListener("click", () => {
+          navbarCont.classList.add("expanded");
+          menuIcon.style.display = "none";
+          cancelIcon.style.display = "block";
+        });
+      
+        cancelIcon.addEventListener("click", () => {
+          navbarCont.classList.remove("expanded");
+          cancelIcon.style.display = "none";
+          menuIcon.style.display = "block";
+        });
+          
+function showTab(tabName) {
+    // Hide all tab content
+    document.getElementById('personal').style.display = 'none';
+    document.getElementById('team').style.display = 'none';
+
+    // Show the selected tab
+    document.getElementById(tabName).style.display = 'block';
+
+    // Reset button text color
+    document.getElementById('personalBtn').querySelector('span').style.color = '#818181'; // gray
+    document.getElementById('teamBtn').querySelector('span').style.color = '#818181'; // gray
+
+    // Reset images to default
+    document.getElementById('personalImg').src = 'userteamper.png'; // normal personal icon
+    document.getElementById('teamImg').src = 'Group 48.png'; // normal team icon
+
+    // Set active button style
+    if (tabName === 'personal') {
+        document.getElementById('personalBtn').querySelector('span').style.color = '#EE4037'; // red
+        document.getElementById('personalImg').src = 'Group red1.png'; // active personal icon
+    } else {
+        document.getElementById('teamBtn').querySelector('span').style.color = '#EE4037'; // red
+        document.getElementById('teamImg').src = 'Group red.png'; // active team icon
+    }
+}
+
+// pop up Get the modal and close button
+var modal = document.getElementById("popupModal");
+var closeBtn = document.querySelector(".close-btn");
+
+// Find all PENDING elements and attach click event
+var pendingElements = document.querySelectorAll("#PENDING");
+
+pendingElements.forEach(function(element) {
+  element.addEventListener("click", function() {
+    modal.style.display = "block";
+  });
+});
+
+// Close the modal when user clicks the 'X'
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+// Close modal when clicking outside the popup box
+window.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+
+
+
+
+      </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HOME_PAGE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+  <div class="hometotal_cont">
+
+    <div class="navbar_cont">
+      <img class="menuicon" src="images/menu-01.png" alt="menu">
+      <img class="cancelicon" src="images/Icon.png" alt="cancel">
+      <div class="navbar">
+        <ul>
+          <li><a  href="homepage.html" id="active" ><img class="home" src="images/home-05.png" alt="home"> <span class="span">HOME</span> </a></li>
+          <li><a  href="leavests1.html"><img class="home" src="images/Icon2.png" alt="home"><span class="span">LEAVE STATUS</span></a></li>
+          <li><a href="requestpage.html"><img class="home" src="images/file-05.png" alt="home"><span class="span">REQUEST</span></a></li>
+          <li><a href="teaminfo.html" ><img class="home" src="images/Group 57.png" alt="home"><span class="span">TEAM INFO</span></a></li>
+          <li><a href="regularization.html" ><img class="home" src="images/Vector 23.png" alt="home"><span class="span">REGULARIZATION</span></a></li>
+          <li><a href="ANNOUNCEMENT.html"><img class="home" src="images/signal.png" alt="home"><span class="span">ANNOUNCEMENT</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="header">
+        <div class="container">
+          <div class="logohead">
+            <img class="logo" src="images/logo.png" alt="logo">
+          </div>
+        </div>
+    </div>
+    <div class="body_cover">
+      <div class="container">
+        <div class="timewhitebox">
+        <div class="dayndate">
+        <p style="color: #262161; font-family: roboto_700; font-size: 16px;">Thursday | General Shift</p>  
+         <p class="dateho" style="color: #EE4037; margin-left: 0px; font-family:roboto_700; font-size: 16px;">04 April 2025</p> 
+        </div>
+        <div class="time">
+          10:20:10
+        </div>
+        <div class="inout">
+          <label class="simple-switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="simple-slider" id="sliderText">    </span>
+          </label> 
+        </div>
+        </div>
+        <div class="attdinfo">
+          <div class="whiteboxmon">
+            <p class="monthtit" style="color: #392C5A; font-size: 24px; ">MONTHLY ATTENDANCE INFO</p>
+            <hr style="color: #C4C4C4; width: 413px; height: 1px;">
+            <div class="monyear">
+              <button class="arrowbox" id="leftarrow" style="background-image:url(chevron-double-right.png); border: none; background-color: white;"> </button>
+                 <p class="monyrtext" style="font-size: 20px; color: #392C5A; text-align:center;"> APRIL 2025</p>
+                 <button class="arrowbox" id="leftarrow" style="background-image:url(chevron-double-right\ \(1\).png); border: none; background-color: white;"> </button>
+                </div>
+            <br>
+            <div class="calendar-container">
+              <div class="calendar">
+                <!-- header -->
+                <div class="day headercal">SUN</div>
+                <div class="day headercal">MON</div>
+                <div class="day headercal">TUE</div>
+                <div class="day headercal">WED</div>
+                <div class="day headercal">THU</div>
+                <div class="day headercal">FRI</div>
+                <div class="day headercal">SAT</div>
+            
+                <!-- Week 1 -->
+                <div class="date empty"></div>
+                <div class="date empty"></div>
+                <div class="date present">1</div>
+                <div class="date present">2</div>
+                <div class="date permission">3</div>
+                <div class="date present">4</div>
+                <div class="date present">5</div>
+            
+                <!-- Week 2 -->
+                <div class="date empty">6</div>
+                <div class="date present">7</div>
+                <div class="date absent">8</div>
+                <div class="date present">9</div>
+                <div class="date present">10</div>
+                <div class="date present">11</div>
+                <div class="date empty">12</div>
+            
+                <!-- Week 3 -->
+                <div class="date empty">13</div>
+                <div class="date present">14</div>
+                <div class="date absent">15</div>
+                <div class="date absent">16</div>
+                <div class="date present">17</div>
+                <div class="date present">18</div>
+                <div class="date present">19</div>
+            
+                <!-- Week 4 -->
+                <div class="date empty">20</div>
+                <div class="date present">21</div>
+                <div class="date present">22</div>
+                <div class="date present">23</div>
+                <div class="date present">24</div>
+                <div class="date present">25</div>
+                <div class="date empty">26</div>
+            
+                <!-- Week 5 -->
+                <div class="date empty" id="emptycolor">27</div>
+                <div class="date empty" id="emptycolor" >28</div>
+                <div class="date empty" id="emptycolor">29</div>
+                <div class="date empty" id="emptycolor">30</div>
+                <div class="date empty"></div>
+                <div class="date empty"></div>
+                <div class="date empty"></div>             
+              
+              </div>
+            
+              <div class="legend">
+                <div><div class="box absent"></div> Absent</div>
+                <div><div class="box permission"></div> Permission</div>
+                <div><div class="box present"></div> Present</div>
+              </div>
+            </div>
+          </div>
+          <div class="whiteboxmon">
+            <p class="monthtit" style="color: #392C5A; font-size: 24px;">WEEKLY ATTENDANCE INFO</p>
+            <hr style="color: #C4C4C4; width: 413px; height: 1px;">
+            <div class="monyear">
+              <button class="arrowbox" id="leftarrow" style="background-image:url(chevron-double-right.png); border: none; background-color: white;"> </button>
+                 <p class="monyrtext" style="font-size: 20px; color: #392C5A; text-align:center;"> 07-APR-2025 TO 13-APR-2025</p>
+                 <button class="arrowbox" id="leftarrow" style="background-image:url(chevron-double-right\ \(1\).png); border: none; background-color: white;"> </button>
+                </div>
+            <div class="barchart-container">
+              
+              <div class="chart">
+                
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+              </div>
+              
+            </div>
+
+            </div>
+            <div class="whiteboxmon">
+              <p class="monthtit" style="color: #392C5A; font-size: 24px;">LEAVE INFO</p>
+              <hr style="color: #C4C4C4; width: 413px; height: 1px;">
+              <div class="leave-container">
+                <div class="leaveinfo">
+                  <img style="width: 28px; height: 29px; margin-top: 10px;" src="images/Group 12.png" alt="img">
+                  <p style="color: #262161; font-size: 12px; font-family: roboto_600;">CAUSAL LEAVE</p>
+                  <p style="color: #959595; font-size: 12px; font-family: roboto_400;">12 LEAVES AVAILABLE</p>
+                </div>
+                <div class="leaveinfo">
+                  <img style="width: 28px; height: 29px; margin-top: 10px;" src="images/Vector 2.png" alt="img">
+                  <p style="color: #262161; font-size: 12px; font-family: roboto_600;">COMPENSATORY OFF</p>
+                  <p style="color: #959595; font-size: 12px; font-family: roboto_400;">05 LEAVES AVAILABLE</p>
+                </div>
+                <div class="leaveinfo">
+                  <img style="width: 28px; height: 29px; margin-top: 10px;" src="images/Group 12 (1).png" alt="img">
+                  <p style="color: #262161; font-size: 12px; font-family: roboto_600;">EARNED LEAVE</p>
+                  <p style="color: #959595; font-size: 12px; font-family: roboto_400;">00 LEAVES AVAILABLE</p>
+                </div>
+                <div class="leaveinfo">
+                  <img style="width: 28px; height: 29px; margin-top: 10px;" src="images/Group 21.png" alt="img">
+                  <p style="color: #262161; font-size: 12px; font-family: roboto_600;">SICK LEAVE</p>
+                  <p style="color: #959595; font-size: 12px; font-family: roboto_400;">08 LEAVES AVAILABLE</p>
+                </div>
+
+                
+              </div>
+              <div class="reqtext">
+                <a href="requestpage.html" style="text-decoration: none; color: white;" class="reqestleavebut"><p class="reqleavbut" >REQUEST LEAVE</p></a>
+               </div>
+             
+            </div>
+
+        </div>
+
+
+      </div>
+    </div>
+</div>
+
+    <script>
+        const menuIcon = document.querySelector(".menuicon");
+        const cancelIcon = document.querySelector(".cancelicon");
+        const navbarCont = document.querySelector(".navbar_cont");
+      
+        menuIcon.addEventListener("click", () => {
+          navbarCont.classList.add("expanded");
+          menuIcon.style.display = "none";
+          cancelIcon.style.display = "block";
+        });
+      
+        cancelIcon.addEventListener("click", () => {
+          navbarCont.classList.remove("expanded");
+          cancelIcon.style.display = "none";
+          menuIcon.style.display = "block";
+        });
+
+
+        
+  const toggle = document.getElementById('toggleSwitch');
+  const sliderText = document.getElementById('sliderText');
+
+  // toggle.addEventListener('change', () => {
+  //   sliderText.textContent = toggle.checked ? 'OUT' : 'IN';
+  // });
+
+  var xValues = ["MON", "TUE", "WED", "THUR", "FRI","SAT","SUN"];
+var yValues = [100, 80, 65, 24, 15, 20, 10];
+var barColors = ["green", "green","green","green","red","yellow","gray"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      
+    }
+  }
+});
+
+      </script>
+
+
+
+</body>
+
+</html>

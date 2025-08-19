@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ANNOUNCEMENT_PAGE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+  <div class="hometotal_cont">
+
+    <div class="navbar_cont">
+      <img class="menuicon" src="menu-01.png" alt="menu">
+      <img class="cancelicon" src="Icon.png" alt="cancel">
+      <div class="navbar">
+        <ul>
+            <li><a  href="homepage.html"  ><img class="home" src="home-05.png" alt="home"> <span class="span">HOME</span> </a></li>
+            <li><a  href="leavests1.html"><img class="home" src="Icon2.png" alt="home"><span class="span">LEAVE STATUS</span></a></li>
+            <li><a href="requestpage.html"><img class="home" src="file-05.png" alt="home"><span class="span">REQUEST</span></a></li>
+            <li><a href="teaminfo.html" ><img class="home" src="Group 57.png" alt="home"><span class="span">TEAM INFO</span></a></li>
+            <li><a href="regularization.html" ><img class="home" src="Vector 23.png" alt="home"><span class="span">REGULARIZATION</span></a></li>
+            <li><a href="ANNOUNCEMENT.html" id="active"><img class="home" src="signal.png" alt="home" ><span class="span">ANNOUNCEMENT</span></a></li>
+          </ul>
+      </div>
+
+    </div>
+    <div class="header">
+        <div class="container">
+          <div class="logohead">
+            <img class="logo" src="logo.png" alt="logo">
+          </div>
+        </div>
+    </div>
+    <div class="body_cover">
+      <div class="container">
+          <div class="announcepagewhitebox" >
+            <div class="ann_cover">
+            <p class="monthtit" style="color: #392C5A; font-size: 24px; float: left; text-align: center; width: 100%;"> ANNOUNCEMENT</p>
+            <hr style="color: #C4C4C4; width: 800px; height: 1px;">
+            <div class="announcecontainer">
+             <!-- <button class="createbut"><p class="createbuttext">CREATE</p> <span class="plusicon"> <img src="plus-03.png" alt="addsymbol"></span> </button> -->
+             <button class="createbut" onclick="openPopup()">
+              <p class="createbuttext">CREATE</p> 
+              <span class="plusicon">
+                <img src="plus-03.png" alt="addsymbol">
+              </span> 
+            </button>
+          <div class="announcedetails">
+            <p class="circlenameanno">HR</p>
+            <p class="eventname">INAUGURATION EVENT</p>
+            <p class="eventdate">21-03-2025</p>
+            <button class="togglebutton" style="border: none; background: none; cursor: pointer;">
+                <img class="movearrowanno" src="move-down.png" alt="movearrow">
+            </button>
+            <div class="eventdescription">
+                <p class="announcedescr">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                   as opposed to using 'Content here, content here', making it look like readable English.
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
+                    and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+                    (injected humour and the like).It is a long established fact that a reader will be distracted by
+                     the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+                      making it look like readable English. Many desktop publishing packages and web page editors now use 
+                      Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
+                       still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                        sometimes on purpose (injected humour and the like).It is a long established fact that a reader 
+                        will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        
+        <div class="announcedetails">
+            <p class="circlenameanno">M</p>
+            <p class="eventname">TEAM OUTING</p>
+            <p class="eventdate">26-03-2025</p>
+            <button class="togglebutton" style="border: none; background: none; cursor: pointer;">
+                <img class="movearrowanno" src="move-down.png" alt="movearrow">
+            </button>
+            <div class="eventdescription">
+                <p class="announcedescr">Description for TEAM OUTING...</p>
+            </div>
+        </div>
+        
+        <div class="announcedetails">
+            <p class="circlenameanno">CTO</p>
+            <p class="eventname">TEAM MEETING</p>
+            <p class="eventdate">16-04-2025</p>
+            <button class="togglebutton" style="border: none; background: none; cursor: pointer;">
+                <img class="movearrowanno" src="move-down.png" alt="movearrow">
+            </button>
+            <div class="eventdescription">
+                <p class="announcedescr">Description for TEAM MEETING...</p>
+            </div>
+        </div>
+        
+          
+         
+
+          
+             
+           
+
+            </div>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+</div>
+
+<!-- popup...cont -->
+<div id="popupForm" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <p class="monthtit" style="color: #392C5A; font-size: 24px; float: left; text-align: center; width: 100%;">ANNOUNCEMENT</p>
+    <hr style="color: #C4C4C4; width: 680px; height: 1px;">
+    <div class="annopopform_container"> 
+      <div class="leftannopopform_group">
+        <div class="annopopform_group">
+          <label for="leaveType">SUBJECT</label>
+          <input type="text"  required />
+        </div>
+        <div class="annopopform_group">
+          <label for="fromDate">DATE</label>
+          <input type="date" id="fromDate" value="YYYY-MM-DD">
+        </div>
+        <div class="annopopform_group">
+          <a href="ANNOUNCEMENT.html"><button type="submit" class="announsubmit-btn" >SUBMIT</button></a>
+          </div>
+
+      </div>
+      
+      <div class="rightannopopform_group">
+        <div class="annopopform_group">
+          <label for="leaveMode">DEPARTMENT</label>
+          <select id="leaveMode">
+            <option>ALL</option>
+            <option>INFORMATION TECHNOLOGY</option>
+                    <option>DATA MANAGEMENT</option>
+                    <option>HUMAN RESOURCE</option>
+                    <option>CUSTOMER RELATION</option>
+          </select>
+        </div>
+        
+        <div class="annopopform_group">
+        <label for="description">DESCRIPTION</label>
+        <textarea class="no-resize" id="description" rows="4"></textarea>
+        </div>
+      </div>
+      
+     
+  </div> 
+  
+  </div>
+
+</div>
+
+    <script>
+        const menuIcon = document.querySelector(".menuicon");
+        const cancelIcon = document.querySelector(".cancelicon");
+        const navbarCont = document.querySelector(".navbar_cont");
+        menuIcon.addEventListener("click", () => {
+          navbarCont.classList.add("expanded");
+          menuIcon.style.display = "none";
+          cancelIcon.style.display = "block";
+        });
+      
+        cancelIcon.addEventListener("click", () => {
+          navbarCont.classList.remove("expanded");
+          cancelIcon.style.display = "none";
+          menuIcon.style.display = "block";
+        });
+
+      //  announce expand
+      const announcementDetails = document.querySelectorAll('.announcedetails');
+
+announcementDetails.forEach(detail => {
+    detail.addEventListener('click', function () {
+        const description = detail.querySelector('.eventdescription');
+        const arrow = detail.querySelector('.movearrowanno');
+
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+            arrow.src = "move-up.png"; // Change arrow image when open
+        } else {
+            description.style.display = "none";
+            arrow.src = "move-down.png"; // Back to down arrow
+        }
+    });
+});
+
+
+
+// popup
+
+function openPopup() {
+  document.getElementById("popupForm").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popupForm").style.display = "none";
+}
+
+
+      </script>
+
+
+
+</body>
+
+</html>
